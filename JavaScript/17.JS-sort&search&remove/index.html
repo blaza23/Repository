@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortiranje, Pretraživanje, Dodavanje, Uklanjanje</title>
+</head>
+<body>
+    <!--SEARCH:-->
+    <label for="searchInput">Search: </label>
+        <input type="search" id="searchInput" name="searchInput">
+    <!--Sortiranje za ime-->
+        <label for="select">Sort name:</label>
+    <select name="sortName" id="sortName">
+        <option value="default">--default--</option>
+        <option value="A-Z">A-Z</option>
+        <option value="Z-A">Z-A</option>
+    </select>
+
+    <!--Sortiranje za value-->
+    <label for="selectValue">Sort Value:</label>
+    <select name="sortValue" id="sortValue">
+        <option value="default">--default--</option>
+        <option value="fromHighestNumber">From highest</option>
+        <option value="fromLowestNumber">From lowest</option>
+    </select>
+
+    <!--lista koja se koristi za template--> 
+    <ul class="list">
+        
+    </ul>
+    
+
+    <!--Template-->
+    <script id="listTemplate" type="text/x-handlebars-template">
+    {{#each person}}
+    <li class="list-item">{{name}}, {{value}}
+    <button class="delete">Delete</button>
+    </li>
+    {{/each}}
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

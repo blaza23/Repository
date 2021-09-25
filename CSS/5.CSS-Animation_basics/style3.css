@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+  width: 40rem;
+  height: 40rem;
+  background-color: ghostwhite;
+}
+
+.shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10rem;
+  height: 10rem;
+  background-color: rgba(33, 136, 247, 0.797);
+}
+
+.first-shape {
+  transform: translate(-200%, -200%);
+}
+.second-shape {
+  transform: translate(100%, -200%);
+}
+.third-shape {
+  transform: translate(-50%, -50%) rotate(45deg) scale(2.5);
+}
+.fourth-shape {
+  transform: translate(-200%, 100%);
+}
+.fifth-shape {
+  transform: translate(100%, 100%);
+}

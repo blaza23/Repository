@@ -1,0 +1,51 @@
+.statictic-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+    @include mq-down('phone'){
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .statistic{
+        text-align: center;
+        padding-bottom: 50px;
+
+        &-number{
+            display: inline-block;
+            padding-bottom: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        &-title{
+            padding-bottom: 20px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        &-content{
+            line-height: 1.4rem;
+        }
+    }
+}
+    .promotion{
+        text-align: center;
+
+        &-title{
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+
+        &-content{
+            font-weight: bold;
+        }
+        
+        &-image{
+            width: 500px;
+            height: auto;
+            padding-top: 30px;
+        }
+}

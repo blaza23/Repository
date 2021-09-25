@@ -1,0 +1,145 @@
+.primary-navigation{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    @include mq-down('phone'){
+        display: block;
+    }
+   
+    &__image{
+        width: 6rem;   
+        margin-right: 1rem;
+
+        @include mq-down('phone'){
+             width: 5rem;
+             height: 2rem;
+        }
+    }
+
+    &-links{
+        display: flex;
+        gap: 30px;
+        padding-top: .5rem;
+
+        @include mq-down('phone'){
+            display: none;
+        }
+        @include mq-down('tablet'){
+               display: none;
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        color: $primary-text-color;
+        font-weight: bold;
+    }
+
+    .input-wrapper{
+        position: relative;
+        width: 100%;
+        margin: 0 1rem;
+
+        @include mq-down('phone'){
+            position: relative;
+            padding-top: 4rem;
+            // width: 100%;
+        }
+
+        .input{
+            width: 100%;
+            border: 1px solid $footer-bg;
+            background-color: $footer-bg;
+            border-radius: 30px;
+            padding: .6rem 3rem;
+    
+            @include mq-down('tablet'){
+                width:100%;
+         }
+    
+            @include mq-down('phone'){
+                position: absolute;
+                width: 100%;
+                top: 50px;
+               
+            }
+        }
+    
+        .magnifier{
+            position: absolute;
+            left: 5px;
+            top:5px;
+    
+            @include mq-down('tablet'){
+                position: absolute;
+                top: 5px;
+                left: 10px; 
+            }
+    
+            @include mq-down('phone'){
+                position: absolute;
+                top: 58px;
+            }
+        }
+    
+        .camera{
+            position: absolute;
+            background: none;
+            border: none;
+            right: 5px;
+            top: 5px;
+            cursor: pointer;
+    
+            @include mq-down('tablet'){
+                position: absolute;
+                top: 5px;
+                right: 10px; 
+            }
+    
+            @include mq-down('phone'){
+                position: absolute;
+                top: 58px;
+            }
+        }
+    }
+    
+    .icon{
+        width: 25px; 
+        height: 20px;
+        margin: 0 .3em;
+        padding-top: .2em;
+    }
+
+    &-svg{
+        display: flex;
+        gap:10px;
+        padding-top: .5rem;
+        position:relative;
+
+        @include mq-down('phone'){
+        position: absolute;
+        top: 30px;
+        left: 300px;
+        }
+
+        .basket-counter{
+            position: absolute;
+            right: 0px;
+            bottom: 10px;
+            border: 1px solid $blue-color;
+            background-color: $blue-color;
+            border-radius: 100%;
+            width: 15px;
+            height: 15px;
+            color: $white-color;
+            font-weight: bold;
+            font-size: .7rem;
+            text-align: center;
+
+        }
+    }
+
+
+}

@@ -1,0 +1,56 @@
+.newsletter-wrapper{
+    display: flex;
+    height: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 300px;
+    padding-right: 200px;
+    background-color: lighten($light-gray-color,18);
+
+    .newsletter-content{
+        padding-top: 10px;
+        font-weight: bold;
+        color: lighten($black-color, 20);
+    }
+    .newsletter-input-button-wrapper{
+        padding-left: 70px;
+        display: flex;
+        gap: 20px;
+        width: 700px;
+        .newsletter-input{
+            width: 100%;
+            padding: 15px;
+            border: 2px solid $black-color ;
+        }
+        .newsletter-button{
+            @include black-button;
+            width: 40%;
+        }
+    }
+}
+
+.basic-informations{
+    height: 100px;
+    background-color: $black-color;
+
+    .basic-information-first-list{
+        display: flex;
+        gap: 30px;
+        padding-left: 250px;
+        padding-top: 30px;
+
+        .basic-information-first-list__item{
+            display: flex;
+            flex-direction: column;
+            color: $white-color;
+            font-size: .9rem;
+        }
+        .icon{
+            align-self: center;
+            padding-bottom: 5px;
+            height: 1.5em;
+            width: 1.5em;
+            fill: $white-color;
+        }
+    }
+}

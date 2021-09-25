@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;//Google-fonts: odaberemo dva fonta-dobijemo ovaj font-family
+    font-size: 16px;
+}
+*,
+*::before,
+*:after {
+    font-family: inherit;
+    box-sizing: inherit;
+}
+
+
+.visually-hidden { //(za SVG, naslove -sve što se NE prikazuje a mora bit tu)
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+
+.container { //kreiranje container-a
+    max-width: 1212px; // maksimalna širina ekrana u koju ide sadržaj
+    margin: auto; //centriranje sadržaja
+    padding: 0 50px;
+}
+
+
+body{
+    background-image: url("/assets/woodenBackground.jpeg");
+    background-repeat: repeat;
+    background-position-x: center;
+    background-size: cover;
+}

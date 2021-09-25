@@ -1,0 +1,19 @@
+.wide{
+    background-color: rgb(172, 208, 230);
+    display: block;
+    padding: 0.5rem;
+}
+
+div div {
+    display: inline;
+    color:green;
+
+}
+.hide-me{
+    display: none;
+}
+.link{
+   display:inline-block;
+   line-height: 0%;
+   border: 2px solid red;
+}

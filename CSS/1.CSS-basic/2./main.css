@@ -1,0 +1,27 @@
+body {
+    background-color: lightcyan;
+}
+
+p{
+    font-size: 10px;
+    line-height-step:22px;
+}
+
+#main{
+    width:500px;
+    margin:auto;
+}
+
+.lista {
+    background-color: lightgreen;
+}
+
+.lista.druga{
+    background-color: lightseagreen;
+}
+.prva{
+    color:blue;
+}
+.list-item{
+    letter-spacing: 3px;
+}

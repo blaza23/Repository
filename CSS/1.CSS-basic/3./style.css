@@ -1,0 +1,65 @@
+body{
+    background-color: lightgray;
+    width: 600px;
+    margin: auto;
+    
+}
+
+
+div{
+
+    text-transform: uppercase;
+}
+
+
+li{
+    letter-spacing: 2px;
+    padding:8px 10px;
+}
+
+ol, 
+li {
+
+    font-weight: bold;
+}
+
+a {
+    color: blueviolet;
+    text-decoration: none;
+}
+a:hover,
+a:focus{
+
+    color:crimson;
+    text-decoration: none;
+
+}
+
+a:visited{
+    color:darkblue;
+    text-decoration: none;
+}
+
+p::first-letter{
+    font-size:45px ;
+    width:12px;
+}
+
+
+blockquote::before,
+blockquote::after {
+    content:'"';
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana;
+    padding:0px 20px;
+}
+
+blockquote::before{
+    text-align: left;
+}
+
+blockquote::after{
+    text-align: right;
+    dysplay: block;
+}

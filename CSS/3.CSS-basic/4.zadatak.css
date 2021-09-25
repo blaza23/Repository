@@ -1,0 +1,18 @@
+.box-1{
+    height: 5rem;
+    width: 5rem;
+    background-color: royalblue;
+    border-radius: 5px;
+    float: right;
+
+}
+
+.wrapper{
+    background-color: skyblue;
+}
+
+.wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}

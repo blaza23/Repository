@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="action-page" method="GET">
+        <div>
+            <!--ID daje vezu između labela i forme inputa pa je obavezan-->
+            <label for="fullName">Full name:</label>
+            <input type="text" name="Full_Name" id="fullName">
+        </div>
+
+        <div>
+            <label for="email"> E-mail </label>
+            <input type="email" name="email" id="email"> 
+        </div>
+        <div>
+            <!--tu netreba type jel je textarea vec vrsta-->
+            <label for="message">Message</label>
+        <textarea name="message" id="message" maxlength="5"></textarea>
+        </div>
+        <div>
+           <button>Send the message</button>
+        </div>
+    </form>
+
+    <form>
+        <div>
+            <label></label>
+        </div>
+    </form>
+
+</body>
+
+</html>

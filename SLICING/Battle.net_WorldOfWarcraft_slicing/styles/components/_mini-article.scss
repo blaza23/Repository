@@ -1,0 +1,81 @@
+$mini-article-item-padding: 15px;
+
+.mini-article {
+  background-color: rgba(190, 97, 19, .1); //ovdje stavit pozadinu smeđu 
+  border-bottom: 1px solid darken($primary-color,50);
+  transition: 200ms;
+  
+  &:not(.mini-article--big){
+    background-color: rgba(190, 97, 19, .1);
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: $mini-article-item-padding;
+    position: relative;
+    color:inherit;
+
+    .mini-article--big {
+      align-items: flex-start;
+      padding-left: 0;
+      
+    }
+  }
+
+  &__image {
+    width: 80px;
+    margin-right: 0.5rem;
+
+    .mini-article--big & {
+      width:130px;
+      margin-right: 1.5rem;
+
+    }
+  }
+
+  &__headline {
+    font-size: 1rem;
+    margin: 0;
+    color: $primary-color;
+      span{
+        color: $secondary-color;
+      }
+      .mini-article--big &{
+        font-size: 1rem;
+        margin:0;
+      }
+  }
+
+  &__summery{
+   font-size: 0.8rem;
+   line-height: 1.3;
+   margin-bottom: 0.3rem;
+  }
+
+  &__published {
+    color: $secondary-color;
+    font-size: 0.7rem;
+    position: absolute;
+    right: $mini-article-item-padding;
+    top: $mini-article-item-padding;
+
+    .mini-article--big &{
+      position: initial;
+    }
+  }
+
+  &:hover,
+  &.active {
+     
+
+    &:not(.mini-article--big) {
+      background-color: rgba(190, 97, 19, .3);;
+    }
+
+    &.mini-article--big{
+      padding-left: $mini-article-item-padding;
+    }
+  }
+}

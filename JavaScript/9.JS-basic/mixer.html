@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv=“X-UA-Compatible” content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="mixer.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="containerL">
+        <div class="inputForm">
+          <label for="">Change by:</label
+          ><span><input class="getByInput" value=" "type="text" /></span>
+          <br />
+          <label for="">Opacity:</label
+          ><span><input class="opacityInput" type="text" /></span>
+        </div>
+        <div class="colorButtons">
+          <div>
+            <p>Red</p>
+            <button id="red”"value="red+">+</button>
+            <button id="red" value="red-">-</button>
+          </div>
+          <div>
+            <p>Green</p>
+            <button id="green" value="green+">+</button>
+            <button id="green" value="green-">-</button>
+          </div>
+          <div>
+            <p>Blue</p>
+            <button id="blue" value="blue+">+</button>
+            <button id="blue" value="blue-">-</button>
+          </div>
+        </div>
+      </div>
+      <div class="containerR">
+        <label for="">Mixed color</label>
+        <div class="colorDiv"></div>
+        <div class="randomizeDiv">
+          <button>Randomize</button><span class="rgb">R: 0 G: 0 B: 0</span>
+        </div>
+      </div>
+    </div>
+    <script src="mixer.js"></script>
+  </body>
+</html>

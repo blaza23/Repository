@@ -1,0 +1,134 @@
+/*1.zadatak*/
+
+$light-color: white;
+$dark-color: black;
+
+
+@mixin color ($input:"dark"){
+    @if $input == "dark"{
+        background-color: $dark-color;
+        color: $dark-color;
+    } @else {
+        background-color:$light-color;
+        color: $light-color;
+    }
+}
+
+
+/*2.zadatak*/
+@mixin layput($grid:true){
+    @if $grid{
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        grid-auto-rows: 100px;
+    } @else {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*3zadatak*/
+$weights: light, normal, bold;
+
+@each $weight in $weights{
+    .listClass-#{$weight} {
+            background-color: white;
+            color:black;
+            font-weight: $weight;
+            
+    }
+
+}
+
+/*4.zadatak*/
+
+$colors:(
+    'red' : #e53935,
+    'green' :#43a047,
+    'blue' : #1e88e5,
+);
+
+@each $type, $color in $colors{
+    .thecolor-#{$type}{
+        background-color: $color;
+
+    }
+}
+
+/*5.zadatak*/  
+
+$font-size: (6rem, 5rem, 4rem, 3rem, 2rem, 1rem);
+
+@for $i from 1 through 6 {
+
+    h#{$i}{
+        font-size: nth($font-size, $i);
+    }
+
+}
+
+    /*drugi nacin 5. zadatak bez liste*/
+
+@for $i from 1 through 6{
+    .heading-#{$i}{
+        font-size: 1rem * (7-$i);
+    }
+}
+ /*6.zadatak*/
+ $count: 1;
+ 
+
+ @while $count < 6{
+     .position-#{$count}{
+         position: absolute;
+         top: $count * 10%;
+     }
+
+     $count: $count +1;
+     
+ }
+
+ /*7.zadatak*/
+
+ @function sum($arg1, $arg2){
+    
+     @return $arg1 + $arg2; 
+ }
+
+ /*8.zadatak*/
+
+ $numbers: 1, 4, 9;
+ @function max($numbers) {
+     $max: nth($numbers, 1);
+     @for $i from 1 through length($numbers) {
+         @if (nth($numbers , $i) > $max) {
+             $max: nth($numbers, $i);
+         }
+     }
+     @return $max;
+ }
+ /*9.zadatak*/
+
+$colors:(
+    'primary':dodgerblue,
+    'secondary' : green,
+    'danger': tomato
+);
+
+
+
+@each $button, $color in $colors{
+    .button-#{$button} {
+        background-color: $color;
+
+        color: white;
+     
+        &:hover{
+            background-color: lighten($color, 5);
+        }
+        &:active{
+            background-color: darken($color,5);
+        }
+    }
+}

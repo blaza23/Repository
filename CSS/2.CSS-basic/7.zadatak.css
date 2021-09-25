@@ -1,0 +1,22 @@
+div.prva{
+    font-size: 2rem;
+    height:100vh;
+    background-color: cyan;
+}
+div.druga{
+    font-size: 3rem;
+    height:100vh;
+    background-color: lightskyblue;
+}
+div.treca{
+font-size: 4rem;
+height:100vh;
+background-color: lightsteelblue;
+}
+
+p{
+    font-size: 1em ;
+    letter-spacing: 0.1em;
+    line-height: 1.1em;
+
+}

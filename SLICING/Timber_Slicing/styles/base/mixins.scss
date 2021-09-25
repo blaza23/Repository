@@ -1,0 +1,31 @@
+// media query up - TABLET
+@mixin mq-up($name) {
+    $min: map-get($grid, $name, 'min');
+    @media (min-width: $min) {
+        @content;
+    }
+}
+// media query down - MOBITEL
+@mixin mq-down($name) {
+    $max: map-get($grid, $name, 'max');
+    @media (max-width: $max) {
+        @content;
+    }
+}
+
+// for BIGGER ICONS
+@mixin big-icon{
+    .icon-wrapper{
+        display: inline-block;
+        border: 2px solid $white-color;
+        border-radius: 100%; 
+        padding: 15px;
+
+        .icon{
+            fill: $white-color;
+            width: 25px;
+            height: 25px;
+            
+        }
+    }
+}

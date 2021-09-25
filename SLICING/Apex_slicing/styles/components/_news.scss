@@ -1,0 +1,82 @@
+section{
+    background-image: url("/assets/background-2-4.jpg");
+    background-repeat: no-repeat;
+    background-color: #023d39;
+    background-size: cover;
+    min-height: 860px;
+    
+    .news-articles{
+        
+        &__title{
+            padding-top: 5rem;
+            padding-bottom: 2rem;
+            font-size:2rem;
+            text-transform: uppercase;
+            font-weight: bolder;
+            text-align: center;
+               
+        }
+        &__container{
+            padding: 0 12rem;
+            display: flex;
+            gap:1rem; 
+        }
+        &__little{
+            border: 1px solid $secondary-text-color; 
+            background-color: $secondary-text-color;
+            color: $primary-text-color;
+            // flex-direction: column;
+            padding-bottom: 120px ;
+            border-bottom: 0.5rem solid red;
+            
+            &__section{
+                display: block;
+                position: relative;
+                font-size: 1.3rem;
+                
+                h3{
+                    color: red;
+                    text-transform: uppercase;
+                    font-weight: bolder;
+                    padding-top: 1rem;
+                    padding-left: 1.5rem;
+                    padding-bottom: 1rem;
+                    
+                } 
+                time{
+                    position: absolute;
+                    right:2.3em;
+                    top:0.8em
+                    
+                    
+                }
+            }
+            
+            img{
+               
+                width:100%;
+                height: auto;
+            }
+            
+            &__para1{
+                font-size: 1.5rem;
+                font-weight: italic;
+                padding-left: 1.5rem ;
+                padding-bottom: 1rem;
+                
+                text-transform: capitalize;
+                line-height: 2rem;
+                
+            }
+            &__para2{
+                font-size: 1.3rem;
+                padding-left: 1.5rem;
+                
+                line-height: 2rem;
+                   
+            }
+            
+        }
+         
+    }
+}

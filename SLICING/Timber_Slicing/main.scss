@@ -1,0 +1,14 @@
+//BASE
+@import "./styles/base/reset.scss";
+@import "./styles/base/variables.scss";
+@import "./styles/base/grid.scss";
+@import "./styles/base/mixins.scss";
+@import "./styles/base/global.scss";
+
+//COMPONENTS
+@import "./styles/components/header";
+@import "./styles/components/main-title";
+@import "./styles/components/navigation";
+@import "./styles/components/white-section";
+@import "./styles/components/statictic-section";
+@import "./styles/components/description";

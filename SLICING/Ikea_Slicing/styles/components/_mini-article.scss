@@ -1,0 +1,112 @@
+.grid-wrapper {
+  padding-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  @include mq-down("tablet") {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include mq-down("phone") {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.mini-article {
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 4rem;
+  position: relative;
+
+  .icon-favourite,
+  .button-addToBasket {
+    display: none;
+  }
+
+  &:hover {
+    .icon-favourite {
+      display: block;
+      position: absolute;
+      top: 5px;
+      right: 40px;
+      width: 1.25em;
+      height: 1.25em;
+      fill: map-get($gray-color, "main-gray");
+      
+    }
+
+    .button-addToBasket {
+      display: block;
+      border: 1px solid $blue-color;
+      background-color: $blue-color;
+      border-radius: 100%;
+      padding: 0.5rem;
+      position: absolute;
+      right: 40px;
+      bottom: 30px;
+
+      .icon-addToBasket {
+        width: 2em;
+        height: 2em;
+        fill: $white-color;
+      }
+    }
+
+    .mini-article__image-hover{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 0;
+        top: 30px;
+        display: block;
+    }
+  }
+
+  &__image {
+    padding: 2rem 0;
+    width: 300px;
+    height: auto;
+
+    @include mq-down("phone") {
+      width: 200px;
+      height: auto;
+    }
+  }
+
+  &__image-hover {
+     display: none;
+  }
+
+  &__new {
+    font-weight: bold;
+    color: $new-item-color;
+    font-size: 0.9rem;
+    padding-bottom: 0.3rem;
+  }
+
+  &__title {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 0.3rem;
+  }
+
+  &__description {
+    font-size: 0.9rem;
+    color: map-get($gray-color, "main-gray");
+    font-weight: bold;
+    padding-bottom: 0.3rem;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 1.3rem;
+
+    sup {
+      vertical-align: super;
+      font-size: 0.8rem;
+    }
+    span {
+      font-size: 0.9rem;
+    }
+  }
+}

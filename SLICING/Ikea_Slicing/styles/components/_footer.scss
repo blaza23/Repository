@@ -1,0 +1,267 @@
+.footer{
+    padding-top: 5rem;
+    display: flex;
+
+    @include mq-down('tablet'){
+            display: flex;
+            flex-direction: column;        
+    }
+
+    @include mq-down('phone'){
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title{
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-bottom: 1.2rem;
+    }
+
+    &__content{
+        width: 50%;
+        line-height: 1.35;
+        color: map-get($gray-color, 'footer-gray');
+        font-weight: bold;
+        padding-bottom: 1rem;
+
+        a{
+            color: map-get($gray-color, 'footer-gray');
+
+        }  
+
+        @include mq-down('tablet'){
+                 width: 100%;   
+        }
+
+        @include mq-down('phone'){
+            width: 100%;
+        }
+    }
+
+    &__button{
+        border: 1px solid $primary-text-color;
+        border-radius: 30px;
+        background: $primary-text-color;
+        padding: 15px;
+        display: block;
+
+        &:hover{
+            background-color: lighten($primary-text-color, 20);
+            border-color: lighten($primary-text-color, 20);
+        }
+
+        a{
+            color: $secondary-text-color;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+        }
+    }
+
+    &-lists{
+        &__wrapper{
+            display: flex;
+            gap: 5rem;
+            width: 100%;
+
+            @include mq-down('tablet'){
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    padding-top:1rem ;
+            }
+
+            @include mq-down('phone'){
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding-top: 1rem;
+            }
+        }
+
+        &__title{
+            font-weight: bold;
+            padding-bottom: 1rem;
+        }
+
+        &__item{
+           padding-bottom: .8rem;
+           
+
+           a{
+               font-size: .8rem;
+               text-decoration: none;
+               color: map-get($gray-color, 'footer-gray');
+               font-weight: bold;
+                
+               &:hover{
+                   text-decoration: underline;
+                   color: $primary-text-color;
+               }
+
+           }
+           
+
+        }
+    }
+}
+
+.social-media{
+    display: flex;
+    gap:1rem;
+    padding-top: 5rem;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 2rem;
+
+    @include mq-down('phone'){
+        flex-wrap: wrap;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item{
+        border:1px solid $border-color;
+        border-radius: 50%;
+
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8),
+        &:nth-child(9),
+        &:nth-child(10){
+            border-radius: 10px;
+            padding: 0 10px;
+        }
+
+        .icon{ 
+            width: 1.25em; 
+            height: 1.25em;
+            margin: .5em;
+            
+          }
+
+          a {
+              display: block;
+          }
+
+          
+    }
+
+   
+ 
+}
+
+ //country-button
+ .lang-list {
+    column-count: 1;
+    display: none;
+    padding: 1em;
+    text-align: center;
+    border: 1px solid map-get($gray-color, breadcrump-first-gray);
+    background: $footer-bg;
+    position: absolute;
+    bottom: calc(100% + 5px);
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 130px;
+  
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 0.5em;
+      }
+      
+      &.is-active {
+        font-weight: bold;
+    }
+
+      a {
+        color: $primary-text-color;
+        text-decoration: none;
+      }
+    }
+  }
+  .lang {
+      &-switcher {
+          position: relative;
+          display: inline-block;
+          text-align: center;
+        
+          &:focus-within {
+              .lang-list {
+                  display: block;
+              }
+          }
+      }
+      &-picker {
+          
+          margin-left: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+           
+          .icon { 
+            width: 1.25em; 
+            height: 1.25em;
+            margin: .5em;
+          }
+      }
+  }
+
+//zadnji dio footera
+.footer-second{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    @include mq-down('tablet'){
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    @include mq-down('phone'){
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__content{
+        font-size: .65rem; 
+        padding-top: 0.3rem;
+        color:map-get($gray-color, "footer-gray");
+        font-weight: bold;
+    }
+
+    &__list{
+        display: flex;
+        gap: 1rem;
+
+        @include mq-down('phone'){
+           flex-wrap: wrap;
+        }
+        
+    }
+
+    &__item{
+           
+        a{  
+            
+            font-size: .65rem;
+            color:map-get($gray-color, "footer-gray");
+            font-weight: bold;
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: underline;
+                color: $primary-text-color;
+            }
+            
+        }  
+    }
+}

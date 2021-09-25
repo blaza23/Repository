@@ -1,0 +1,111 @@
+.send-order{
+    padding: 2rem 0;
+
+    &__form{
+        padding-top: 3rem;
+        padding-left: 5rem; 
+        padding-bottom: 1rem;
+
+        &-customer-info{
+            padding-bottom: 3rem;
+
+            .city{
+                font-size: .7rem;
+                color: #868686;
+            }
+            #city{
+                padding-top: .3rem;
+            }
+
+            input{
+                border: none;
+                border-bottom: 1px solid map-get($gray-color, "main-gray");
+                width: 100%;
+                padding-bottom: .5rem;
+                padding-top: 2rem;
+                outline: 0;
+            }
+
+            .add-another-address{
+                padding-top: 3rem;
+                padding-left: 2rem;
+
+                &-button{
+                    display: flex;
+                    gap:15px;
+                    border: none;
+                    background: none;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+
+            .location{
+                padding-bottom: .5rem;
+                display: flex;
+                gap: 10px;
+                position: relative;
+                
+                .icon{
+                    width: 1.25em;
+                    height: 1.25em;
+                    margin-top: .5rem;
+                }
+
+                .postal-number{
+                    font-size: .9rem;
+                    line-height: 1.35;
+
+                    &__number{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        &-payment{
+            position: relative;
+
+            .card-number{
+                padding: 1.5rem 0;
+                display: flex;
+                gap:5px;
+
+                input{
+                    border: none;
+                    border-bottom: 1px solid map-get($gray-color, "main-gray");
+                    width: 100%;
+                    padding-bottom: .5rem;
+                    outline: 0;
+                }
+            }
+        }
+
+        &-submit{
+
+            a{
+                color: $primary-text-color;
+            }
+
+            .submit-form{
+                padding: 1rem 0 ;
+
+                &-button{
+                    width: 100%;
+                    border: 1px solid $border-color;
+                    background: $border-color;
+                    border-radius: 40px;
+                    padding: 1rem;
+                    color: map-get($gray-color, "main-gray");
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+
+                &-content{
+                    font-size: .7rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

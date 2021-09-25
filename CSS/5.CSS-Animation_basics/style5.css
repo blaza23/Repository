@@ -1,0 +1,72 @@
+.cta {
+    position: relative;
+    background-color: transparent;
+    padding: 1em 2em;
+    border: 2px solid #0077c2;
+    color: #0077c2;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition:  all 300ms ease-in-out;
+  }
+  
+  .cta::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #0077c2;
+    transform-origin: top;
+    transform: scale(0);
+    transition:  1s ease-in-out 2s;
+  }
+
+  .cta:hover{
+      border-color: #42a5f5;
+      color: #fff;
+  }
+
+  .cta:hover::after{
+      background-color: #42a5f5;
+      transform: scale(1);
+  }
+
+  /* .cta {
+    position: relative;
+    background-color: transparent;
+    padding: 1em 2em;
+    border: 2px solid #0077C2;
+    color: #0077C2;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition:
+      color 300ms ease-in-out 100ms,
+      border-color 300ms ease-in-out;
+  }
+  .cta::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #0077C2;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: all 300ms ease-in-out;
+  }
+  .cta:hover {
+    border-color: #42A5F5;
+    color: #fff;
+  }
+  .cta:hover::after {
+    background-color: #42A5F5;
+    transform: scaleY(1);
+  } (edited)  */

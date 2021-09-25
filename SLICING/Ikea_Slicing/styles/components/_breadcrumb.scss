@@ -1,0 +1,44 @@
+.breadcrumb{
+      border-bottom: 1px solid $border-color;
+      padding-bottom: 1rem;
+
+      @include mq-down('phone'){
+        padding-top: 1.5rem;
+    }
+      
+    &-list{
+        display: flex;
+        padding-top: 2.5rem;
+
+        &__item{
+            font-weight: bold;
+            font-size: .8rem;
+            
+            @include mq-down('phone'){
+                font-size: .7rem;
+            }
+       
+                a{
+                    text-decoration: none;
+                    color: map-get($gray-color, 'breadcrump-first-gray');
+                }   
+            
+            &:last-child{
+                a{
+                    text-decoration: none;
+                    color: map-get($gray-color, 'breadcrump-second-gray');
+                }   
+            }
+        }
+    }
+
+   
+
+
+    .icon { 
+        width: 0.625em; 
+        height: 0.625em;
+        margin: 0 .5em;
+        fill: map-get($gray-color, 'breadcrump-first-gray');
+      }
+}

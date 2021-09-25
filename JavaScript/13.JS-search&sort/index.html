@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <label for="search"
+        >Search:
+        <input type="search" name="search" id="search" />
+      </label>
+    <label for="sort">Sort:
+        <select name="sort" id="select">
+          <option value="">No sorting</option>
+          <option value="company">Sort by company</option>
+          <option value="owner">Sort by owner</option>
+        </select>
+      </label>
+    <div class="container"></div>
+    <div class="modal-overlay hidden">
+        <div class="modal-box">
+            <div class="modal-close">&times;</div>
+            <h2 class="modal-lead"></h2>
+            <p class="modal-owner"></p>
+            <a class="modal-link" target="blank">Location</a>
+        </div>
+    </div>
+    
+   
+ 
+     
+    
+    <script src="./script.js"></script>
+    
+   
+    	
+    </script>
+</body>
+</html>

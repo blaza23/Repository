@@ -1,0 +1,19 @@
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    
+
+    .logo{
+        color: $white-color;
+        font-family: 'Courier New', Courier, monospace;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2rem;
+
+        &::first-letter{
+            color: $blue-color;
+        }
+    }
+}

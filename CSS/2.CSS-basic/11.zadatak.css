@@ -1,0 +1,30 @@
+*{
+    border-bottom:var(--border);
+    --border: initial;
+}
+
+.b1{
+    width: 100px;
+    height: 100px;
+    background-color: indianred;
+    --border: 5px solid;
+    margin: 20px;
+
+}
+
+.b2{
+    width: 100px;
+    height: 100px;
+    background-color: indianred;
+    --border: 5px solid;
+    margin: 20px;
+    
+}
+.b3{
+    width: 100px;
+    height: 100px;
+    background-color: indianred;
+    --border: 5px solid;
+    margin: 20px;
+    
+}

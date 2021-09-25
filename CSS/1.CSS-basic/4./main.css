@@ -1,0 +1,84 @@
+/*
+  Base styles
+*/
+body {
+  background-color: lightgray;
+  width: 600px;
+  margin: auto;
+}
+
+div {
+  text-transform: uppercase;
+}
+
+/*
+  List styles
+*/
+ul, ol {
+  margin: 10px 0;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+ol {
+  list-style-type: auto;
+  list-style-position: inside;
+}
+
+ol li {
+  font-weight: bold;
+}
+
+li {
+  letter-spacing: 2px;
+  padding: 8px 10px;
+}
+
+/*
+  Anchor styles
+*/
+a:link,
+a:visited {
+  color: tomato;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+p::first-letter {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/*
+  Blockqoute
+*/
+blockquote {
+  width: 70%;
+  margin: 60px auto;
+  font-family: 'Courier New';
+}
+
+blockquote::before,
+blockquote::after {
+  content: '"';
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Verdana;
+  padding: 0 20px;
+}
+
+blockquote::before {
+  text-align: left;
+}
+
+blockquote::after {
+  text-align: right;
+  display: block;
+}

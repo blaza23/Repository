@@ -1,0 +1,17 @@
+div p {
+    width: 600px;
+    height: 100px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+p::first-letter{
+    font-size:30px;
+    color:red;
+    font-weight: bold;
+}
+    

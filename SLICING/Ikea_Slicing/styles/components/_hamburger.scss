@@ -1,0 +1,90 @@
+.hamburger{
+    position: fixed;
+    top: 80px;
+    margin-left: 40px;
+    border: none;
+    background: none;
+
+    @include mq-down('phone'){
+            position: absolute;
+            top: 40px;
+            right: 15px;   
+    }
+
+    .icon{
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
+
+//HAMBURGER-MENU
+
+.hamburger-menu{
+    
+    position: fixed;
+    top: 0;
+    width: 360px;
+    height: 1000px;
+    background: $white-color;
+    z-index: 3;
+    transition: all 300ms ease-in;
+
+    &__close{
+        position: absolute;
+        top: 32px;
+        left: 20px;
+        border: none;
+        background: none;
+        cursor: pointer;
+
+        .icon{
+            width: 1em;
+            height: 1em;
+        }
+    }
+
+    &__wrapper{
+        padding-left: 100px;
+        padding-top: 1.5rem;
+
+        .hamburger-list-first{
+            padding-top: 2.5rem;
+            
+            &__item a{
+                display: inline-block;
+                padding-bottom: 1rem;
+                font-size: 2rem;
+                font-weight: bold;
+                text-decoration: none;
+                color: $primary-text-color; 
+            }
+        }
+
+        .hamburger-link{
+            color: $primary-text-color;
+            text-decoration: none;
+            font-size: .9rem;
+            font-weight: bold;
+        }
+
+        .hamburger-list-second{
+            padding-top: 2rem;
+           
+            
+
+            &__item a{
+                text-decoration: none;
+                color: $primary-text-color;
+                display: inline-block;
+                padding-bottom: .5rem;
+                font-size: .8rem;
+            }
+
+        }
+    }
+    .lang-switcher{
+        position: inherit;
+        bottom: 20px;
+        left: 100px;
+     }
+}

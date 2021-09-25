@@ -1,0 +1,27 @@
+body {
+    background-color: lightcyan;
+    max-width: 600px;
+    border: 4px solid gold;
+    padding: 2rem;
+    margin: 2rem auto;
+  }
+  
+  .box {
+    width: 5rem;
+    height: 5rem;
+    background-color: dodgerblue;
+    border-radius: 15px;
+  }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.container .box-2{
+    align-self: center;
+}
+
+.container .box-3{
+    align-self: flex-end;
+}

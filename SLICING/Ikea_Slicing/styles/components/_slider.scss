@@ -1,0 +1,24 @@
+.slider{
+    position: relative;
+
+    &-left,
+    &-right{
+        background: none;
+        border-radius: 100%;
+        width: 2rem;
+        font-size: 2rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &-left{
+        position: absolute;
+        top:300px;
+    }
+    &-right{
+        position: absolute;
+        top:300px;
+        right: 100px;
+    }
+
+}

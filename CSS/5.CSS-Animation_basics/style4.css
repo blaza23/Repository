@@ -1,0 +1,26 @@
+.link {
+    color: #f57c00;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 300ms ease-in-out;
+  }
+  
+  .link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #f57c00;
+    transform-origin: left;
+    transform: scale(0);
+    transition: all 300ms ease-in-out;
+  }
+
+  .link:hover{
+      color: #bb4d00;  
+  }
+  .link:hover::after{
+      background-color: #bb4d00;
+      transform: scale(1);
+  }

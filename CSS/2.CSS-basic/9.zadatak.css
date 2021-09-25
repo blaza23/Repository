@@ -1,0 +1,12 @@
+body{
+
+    --boja: lightblue;
+    --slova: black;
+
+}
+p{
+    background-color: var(--boja);
+    color: var(--slova);
+    
+}
+ß

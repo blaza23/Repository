@@ -1,0 +1,38 @@
+.secondary-navigation-wrapper{
+    background-color: $black-color;
+    padding: 20px 0;
+}
+.secondary-navigation{
+
+    &-list{
+        display: flex;
+       
+       &__item{
+           padding-right: 20px;
+
+        a{
+            display: flex;
+            gap: 4px;
+            text-decoration: none;
+            color: $white-color;
+            font-size: .8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            
+            .icon{
+                margin-top: 2px;
+                width: 8px;
+                height: 8px;
+                fill: $white-color;
+                transition: transform 300ms ease-in-out;
+            }
+
+            &:hover{
+                .icon{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+      }
+    } 
+}

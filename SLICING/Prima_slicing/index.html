@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prima FrontPage slicing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+ 
+    <!--HEADER-->
+    <header>
+      <!--_primary-navigation.scss-->
+      <nav class="primary-navigation-wrapper">
+        <div class="primary-navigation first-wrapper">
+          <h1 class="navigation-title">Prima.</h1>
+              <ul class="primary-navigation-list">
+                  <li class="primary-navigation-list__item"><a href="#"><svg class="icon">
+                    <use xlink:href="#iconmonstr-tag-23"></use>
+                  </svg>Akcije</a></li>
+                  <li class="primary-navigation-list__item"><a href="#"><svg class="icon">
+                    <use xlink:href="#iconmonstr-book-15"></use>
+                  </svg>Katalog/Letak</a></li>
+                  <li class="primary-navigation-list__item"><a href="#"><svg class="icon">
+                    <use xlink:href="#iconmonstr-file-22"></use>
+                  </svg>Blog</a></li>
+              </ul>
+          </div>  
+          <div class="primary-navigation">
+            <ul class="primary-navigation-list">
+              <li class="primary-navigation-list__item"><a href="#">Poslovnice</a></li>
+              <li class="primary-navigation-list__item"><a href="#">Dostava i montaža u webshopu</a></li>
+              <li class="primary-navigation-list__item"><a href="#">Način plaćanja u webshopu</a></li>
+              <li class="primary-navigation-list__item"><a href="#">Kontakt</a></li>
+            </ul>
+          </div>
+          <div class="primary-navigation button-cursor-wrapper">
+             <button class="primary-navigation-button"><svg class="icon">
+                <use xlink:href="#iconmonstr-magnifier-2"></use>
+              </svg></button>
+            </div>
+            <div class="primary-navigation button-cursor-wrapper">
+              <button class="primary-navigation-button"><svg class="icon">
+                <use xlink:href="#iconmonstr-user-2"></use>
+              </svg></button>
+            </div>
+            <div class="primary-navigation button-cursor-wrapper">
+              <button class="primary-navigation-button"><svg class="icon">
+                <use xlink:href="#iconmonstr-shopping-cart-2"></use>
+              </svg></button>
+            </div>
+        </nav>
+
+        <!--_secondary-navigation.scss-->
+        <nav class="secondary-navigation-wrapper">
+          <h2 class="visually-hidden">Title</h2>
+          <div class="secondary-navigation container">
+              <ul class="secondary-navigation-list">
+                <li class="secondary-navigation-list__item"><a href="#">Dnevni boravak<svg class="icon">
+                  <use xlink:href="#iconmonstr-arrow-65"></use>
+                </svg></a></li>
+                <li class="secondary-navigation-list__item"><a href="#">Spavaća soba<svg class="icon">
+                  <use xlink:href="#iconmonstr-arrow-65"></use>
+                </svg></a></li>
+                <li class="secondary-navigation-list__item"><a href="#">Kuhinja<svg class="icon">
+                  <use xlink:href="#iconmonstr-arrow-65"></use>
+                </svg></a></li>
+                <li class="secondary-navigation-list__item"><a href="#">Blagavaonica<svg class="icon">
+                  <use xlink:href="#iconmonstr-arrow-65"></use>
+                </svg></a></li>
+                <li class="secondary-navigation-list__item"><a href="#">Dječja soba<svg class="icon">
+                  <use xlink:href="#iconmonstr-arrow-65"></use>
+                </svg></a></li>
+                <li class="secondary-navigation-list__item"><a href="#">Predsoblje<svg class="icon">
+                  <use xlink:href="#iconmonstr-arrow-65"></use>
+                </svg></a></li>
+                <li class="secondary-navigation-list__item"><a href="#">Kupaonica<svg class="icon">
+                  <use xlink:href="#iconmonstr-arrow-65"></use>
+                </svg></a></li>
+                <li class="secondary-navigation-list__item"><a href="#">Dekoracije za dom<svg class="icon">
+                  <use xlink:href="#iconmonstr-arrow-65"></use>
+                </svg></a></li>
+                <li class="secondary-navigation-list__item"><a href="#">Zadnja prilika<svg class="icon">
+                  <use xlink:href="#iconmonstr-arrow-65"></use>
+                </svg></a></li>
+                
+              </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+      <!--_hero.scss-->
+      <section class="hero">
+        <h2 class="visually-hidden">Title</h2>
+        <a href="#" class="hero-wrapper">
+          <div class="hero-left">
+            <h3 class="hero-left__title">Prelistajte novi letak!</h3>
+            <p class="hero-left__content">Svatko treba promjenu - započnite sa svojom kuhinjom! Ponuda u letku traje od 23.9. do 27.10.2021. ili do isteka zaliha.</p>
+            <button class="hero-left__button">Saznaj više</button>
+            <svg class="icon left-arrow">
+              <use xlink:href="#iconmonstr-arrow-72"></use>
+            </svg>
+          </div>
+
+          <div class="hero-right">
+            <img class="hero-right__image"src="./assets/hero-right-.jpeg" alt="HeroImg">
+            <div class="hero-right-button-wrapper">
+            <button class="hero-right-button">Mjesec kuhinja.</button>
+            <button class="hero-right-button">Novo-dizajn interijera</button>
+            <button class="hero-right-button">Opremanje interijera u istom stilu</button>
+            </div>
+            <svg class="icon right-arrow">
+              <use xlink:href="#iconmonstr-arrow-72"></use>
+            </svg>
+          </div>
+        </a>
+      </section>
+
+      <!--_article.scss-->
+      <section class="article-wrapper container">
+        <h2 class="article-main-title">Kategorije proizvoda</h2>
+        <div class="article">
+          <a href="#" class="article-link"><img src="./assets/1bigArticle.jpeg" alt="Livingroom" class="article-image">
+          <h3 class="article-title">Dnevni boravak</h3></a>
+          <a href="#" class="article-link"><img src="./assets/2bigArticle.jpeg" alt="Bedroom" class="article-image">
+          <h3 class="article-title">Spavaća soba</h3></a>
+          <a href="#" class="article-link"><img src="./assets/3bigArticle.jpeg" alt="Kitchen" class="article-image">
+          <h3 class="article-title">Kuhinja</h3></a>
+          <a href="#" class="article-link"><img src="./assets/4bigArticle.jpeg" alt="Diningroom" class="article-image">
+          <h3 class="article-title">Blagavaonica</h3></a>
+        </div>
+        <div class="article">
+          <a href="#" class="article-link"><img src="./assets/1smallArticle.jpeg" alt="Kidsroom" class="article-image">
+          <h3 class="article-title">Dječija soba</h3></a>
+          <a href="#" class="article-link"><img src="./assets/2smallArticle.jpeg" alt="Bathroom" class="article-image bathroom">
+          <h3 class="article-title">Kupaonica</h3></a>
+          <a href="#" class="article-link"><img src="./assets/3smallArticle.jpeg" alt="Hall" class="article-image">
+          <h3 class="article-title">Predsoblje</h3></a>
+          <a href="#" class="article-link"><img src="./assets/4smallArticle.jpeg" alt="Decoraions" class="article-image">
+          <h3 class="article-title">Dekoracije za dom</h3></a>
+        </div>
+      </section>
+    
+      <!--_form.scss-->
+    <section class="form container">
+      <h3 class="form-title">Zatraži svoj besplatni primjerak</h3>
+      <div class="form-wrapper">
+      <div class="form-left">
+        <p class="form-left-content">Želiš da tvoj dom ili apartman odišu „onim nečim"? Voliš moderan dizajn ili ipak retro, minimalizam ili bogatstvo luksuznih detalja? Prelistaj novi PRIMA interijeri katalog i potraži ideje za opremanje svih prostorija hrvatskim namještajem. Na čak 145 stranica kataloga ima inspiracije za svakoga. Ne gubi vrijeme tražeći inspiraciju u bespućima interneta! Neka inspiracija stigne na tvoju adresu.</p>
+        <p class="form-left-italic-content">Ispuni formu i zatraži svoj primjerak PRIMA interijeri kataloga.</p>
+        <p class="form-left-list-title">Katalog možete naručiti i putem:</p>
+        <ul class="form-left-list">
+          <li class="form-left-list__item">službenog telefonskog broja: +385 43 244 655</li>
+          <li class="form-left-list__item">službene email adrese: korisnickasluzba@prima-namjestaj.hr</li>
+        </ul>
+        <p class="form-left-last-content">Na dohvat ruke smo vam 0-24h!</p>
+      </div>
+
+      <div class="form-right">
+        <input class="form-input" type="text" id="name&surname" name="name&surname" placeholder="Ime i prezime*">
+        <br>
+        <input class="form-input" type="text" id="address" name="address" placeholder="Adresa*">
+        <br>
+        <input class="form-input" type="text" id="city" name="city" placeholder="Grad*">
+        <br>
+        <input class="form-input" type="number" id="postalNumber" name="postalNumber" placeholder="Poštanski broj*">
+        <br>
+        <input class="form-input" type="email" name="email" id="email" placeholder="Email adresa">
+    
+        <div class="checkbox-wrapper">
+          <input class="checkbox-input" type="checkbox" id="checkbox1" name="checkbox1">
+          <div class="checkbox"><svg class="icon">
+            <use xlink:href="#iconmonstr-check-mark-2"></use>
+          </svg></div>
+          <label for="checkbox1">Želim primiti primjerak kataloga Prima interijeri *</label>
+        </div>
+        <div class="checkbox-wrapper">
+          <input class="checkbox-input" type="checkbox" id="checkbox2" name="checkbox2">
+          <div class="checkbox"><svg class="icon">
+            <use xlink:href="#iconmonstr-check-mark-2"></use>
+          </svg></div>
+          <label for="checkbox2">Želim nastaviti primati inspiracije putem e-maila (novi trendovi, proizvodi, promocije…)
+          </label>
+        </div>
+        <a href="#">Izjava o zaštiti podataka</a>
+        <br>
+        <button class="form-button">Pošaljite</button>
+      </div>
+    </div>
+    </section>
+  </main>
+
+  <!--_footer.scss-->
+  <footer>
+    <section class="newsletter-wrapper">
+      <p class="newsletter-content">Prijavite se na PRIMA newsletter i prvi saznajte za odlične ponude!</p>
+      <div class="newsletter-input-button-wrapper">
+        <input class="newsletter-input"type="email" id="email" name="email" placeholder="Email adresa">
+        <button class="newsletter-button">Prijavi se</button>
+      </div>
+    </section>
+   <section class="basic-informations">
+     <div class="basic-informations-first-wrapper">
+       <ul class="basic-information-first-list">
+         <li class="basic-information-first-list__item"><svg class="icon">
+          <use xlink:href="#iconmonstr-gear-1"></use>
+        </svg>Vlastita proizvodnja</li>
+         <li class="basic-information-first-list__item"><svg class="icon">
+          <use xlink:href="#iconmonstr-pen-16 (1)"></use>
+        </svg>Domaća sirovina</li>
+         <li class="basic-information-first-list__item"><svg class="icon">
+          <use xlink:href="#iconmonstr-gear-1"></use>
+        </svg>Jamstvo kvalitete</li>
+         <li class="basic-information-first-list__item"><svg class="icon">
+          <use xlink:href="#iconmonstr-delivery-1"></use>
+        </svg>Kratki rokovi</li>
+         <li class="basic-information-first-list__item"><svg class="icon">
+          <use xlink:href="#iconmonstr-map-2"></use>
+        </svg>Razgranata mreža salona</li>
+         <li class="basic-information-first-list__item"><svg class="icon">
+          <use xlink:href="#iconmonstr-time-2"></use>
+        </svg>Brza montaža i dostava</li>
+         <li class="basic-information-first-list__item"><svg class="icon">
+          <use xlink:href="#iconmonstr-info-6"></use>
+        </svg>Stručno savjetovanje</li>
+         <li class="basic-information-first-list__item"><svg class="icon">
+          <use xlink:href="#iconmonstr-user-2"></use>
+        </svg>Individualni pristup</li>
+       </ul>
+     </div>
+   </section>
+  </footer>
+
+    <svg width="0" height="0" class="visually-hidden">
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-arrow-65">
+          <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-arrow-72">
+          <path d="M0 12l9-8v6h15v4h-15v6z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-book-15">
+          <path d="M12 4.707c-2.938-1.83-7.416-2.567-12-2.707v17.714c3.937.12 7.795.681 10.667 1.995.846.388 1.817.388 2.667 0 2.872-1.314 6.729-1.875 10.666-1.995v-17.714c-4.584.14-9.062.877-12 2.707zm-10 13.104v-13.704c5.157.389 7.527 1.463 9 2.334v13.168c-1.525-.546-4.716-1.505-9-1.798zm20 0c-4.283.293-7.475 1.252-9 1.799v-13.171c1.453-.861 3.83-1.942 9-2.332v13.704z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-check-mark-2">
+          <path d="M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="iconmonstr-delivery-1">
+          <path d="M3 18h-2c-.552 0-1-.448-1-1v-2h15v-9h4.667c1.117 0 1.6.576 1.936 1.107.594.94 1.536 2.432 2.109 3.378.188.312.288.67.288 1.035v4.48c0 1.121-.728 2-2 2h-1c0 1.656-1.344 3-3 3s-3-1.344-3-3h-6c0 1.656-1.344 3-3 3s-3-1.344-3-3zm3-1.2c.662 0 1.2.538 1.2 1.2 0 .662-.538 1.2-1.2 1.2-.662 0-1.2-.538-1.2-1.2 0-.662.538-1.2 1.2-1.2zm12 0c.662 0 1.2.538 1.2 1.2 0 .662-.538 1.2-1.2 1.2-.662 0-1.2-.538-1.2-1.2 0-.662.538-1.2 1.2-1.2zm-4-2.8h-14v-10c0-.552.448-1 1-1h12c.552 0 1 .448 1 1v10zm3-6v3h4.715l-1.427-2.496c-.178-.312-.509-.504-.868-.504h-2.42z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-facebook-4">
+          <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-file-22">
+          <path d="M11.362 2c4.156 0 2.638 6 2.638 6s6-1.65 6 2.457v11.543h-16v-20h7.362zm.827-2h-10.189v24h20v-14.386c0-2.391-6.648-9.614-9.811-9.614zm4.811 13h-10v-1h10v1zm0 2h-10v1h10v-1zm0 3h-10v1h10v-1z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-gear-1">
+          <path d="M24 13.616v-3.232c-1.651-.587-2.694-.752-3.219-2.019v-.001c-.527-1.271.1-2.134.847-3.707l-2.285-2.285c-1.561.742-2.433 1.375-3.707.847h-.001c-1.269-.526-1.435-1.576-2.019-3.219h-3.232c-.582 1.635-.749 2.692-2.019 3.219h-.001c-1.271.528-2.132-.098-3.707-.847l-2.285 2.285c.745 1.568 1.375 2.434.847 3.707-.527 1.271-1.584 1.438-3.219 2.02v3.232c1.632.58 2.692.749 3.219 2.019.53 1.282-.114 2.166-.847 3.707l2.285 2.286c1.562-.743 2.434-1.375 3.707-.847h.001c1.27.526 1.436 1.579 2.019 3.219h3.232c.582-1.636.75-2.69 2.027-3.222h.001c1.262-.524 2.12.101 3.698.851l2.285-2.286c-.744-1.563-1.375-2.433-.848-3.706.527-1.271 1.588-1.44 3.221-2.021zm-12 2.384c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-info-6">
+          <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-.001 5.75c.69 0 1.251.56 1.251 1.25s-.561 1.25-1.251 1.25-1.249-.56-1.249-1.25.559-1.25 1.249-1.25zm2.001 12.25h-4v-1c.484-.179 1-.201 1-.735v-4.467c0-.534-.516-.618-1-.797v-1h3v6.265c0 .535.517.558 1 .735v.999z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-info-9">
+          <path d="M12 1c-6.338 0-12 4.226-12 10.007 0 2.05.739 4.063 2.047 5.625.055 1.83-1.023 4.456-1.993 6.368 2.602-.47 6.301-1.508 7.978-2.536 9.236 2.247 15.968-3.405 15.968-9.457 0-5.812-5.701-10.007-12-10.007zm1 15h-2v-6h2v6zm-1-7.75c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-instagram-14">
+          <path d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-linkedin-4">
+          <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-magnifier-2">
+          <path d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-map-2">
+          <path d="M17.545 5l-5.545-4-5.545 4-6.455-4v18l6.455 4 5.545-4 5.545 4 6.455-4v-18l-6.455 4zm-10.545 2.073l4-2.886v13.068l-4 2.885v-13.067zm6-2.886l4 2.886v13.068l-4-2.885v-13.069zm-11 .405l4 2.479v13.294l-4-2.479v-13.294zm20 13.295l-4 2.479v-13.295l4-2.479v13.295z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-pen-16 (1)">
+          <path d="M12.408 13.032c1.158-.062 2.854-.388 4.18-1.128.962-1.478 1.598-2.684 2.224-4-.86.064-1.852-.009-2.736-.257 1.068-.183 2.408-.565 3.422-1.216 1.255-1.784 2.185-4.659 2.502-6.429-2.874-.048-5.566.89-7.386 2.064-.614.7-1.146 2.389-1.272 3.283-.277-.646-.479-1.68-.242-2.542-1.458.767-2.733 1.643-4.177 2.86-.72 1.528-.834 3.29-.768 4.276-.391-.553-.915-1.63-.842-2.809-2.59 2.504-4.377 5.784-2.682 9.324 1.879-1.941 4.039-3.783 5.354-4.639-3.036 3.474-5.866 8.047-7.985 12.181l2.504-.786c1.084-1.979 2.059-3.684 2.933-4.905 3.229.423 6.096-2.168 8.028-4.795-.77.19-2.246-.058-3.057-.482z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-pinterest-4">
+          <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 19c-.721 0-1.418-.109-2.073-.312.286-.465.713-1.227.87-1.835l.437-1.664c.229.436.895.804 1.604.804 2.111 0 3.633-1.941 3.633-4.354 0-2.312-1.888-4.042-4.316-4.042-3.021 0-4.625 2.027-4.625 4.235 0 1.027.547 2.305 1.422 2.712.132.062.203.034.234-.094l.193-.793c.017-.071.009-.132-.049-.202-.288-.35-.521-.995-.521-1.597 0-1.544 1.169-3.038 3.161-3.038 1.72 0 2.924 1.172 2.924 2.848 0 1.894-.957 3.205-2.201 3.205-.687 0-1.201-.568-1.036-1.265.197-.833.58-1.73.58-2.331 0-.537-.288-.986-.886-.986-.702 0-1.268.727-1.268 1.7 0 .621.211 1.04.211 1.04s-.694 2.934-.821 3.479c-.142.605-.086 1.454-.025 2.008-2.603-1.02-4.448-3.553-4.448-6.518 0-3.866 3.135-7 7-7s7 3.134 7 7-3.135 7-7 7z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-shopping-cart-2">
+          <path d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="iconmonstr-tag-23">
+          <path d="M2 9.453v-9.453h9.352l10.648 10.625-3.794 3.794 1.849 4.733-12.34 4.848-5.715-14.547zm1.761 1.748l4.519 11.503 10.48-4.118-1.326-3.395-4.809 4.809-8.864-8.799zm-.761-10.201v8.036l9.622 9.552 7.963-7.962-9.647-9.626h-7.938zm12.25 8.293c-.415-.415-.865-.617-1.378-.617-.578 0-1.227.241-2.171.803-.682.411-1.118.585-1.456.585-.361 0-1.083-.409-.961-1.219.052-.345.25-.696.572-1.019.652-.652 1.544-.848 2.276-.107l.744-.744c-.476-.475-1.096-.792-1.761-.792-.566 0-1.125.228-1.663.677l-.626-.626-.698.699.653.652c-.569.826-.842 2.021.076 2.937 1.011 1.011 2.188.541 3.413-.232.6-.379 1.083-.563 1.475-.563.589.001 1.18.498 1.078 1.258-.052.386-.26.764-.621 1.122-.451.451-.904.679-1.347.679-.418 0-.747-.192-1.049-.462l-.739.739c.463.458 1.082.753 1.735.753.544 0 1.087-.201 1.612-.597l.54.538.697-.697-.52-.521c.743-.896 1.157-2.209.119-3.247zm-9.25-7.292c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm0 1c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-time-2">
+          <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 12v-6h-2v8h7v-2h-5z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-triangle-1">
+          <path d="M24 22h-24l12-20z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-user-2">
+          <path d="M20.822 18.096c-3.439-.794-6.641-1.49-5.09-4.418 4.719-8.912 1.251-13.678-3.732-13.678-5.082 0-8.465 4.949-3.732 13.678 1.598 2.945-1.725 3.641-5.09 4.418-2.979.688-3.178 2.143-3.178 4.663l.005 1.241h1.995c0-3.134-.125-3.55 1.838-4.003 2.851-.657 5.543-1.278 6.525-3.456.359-.795.592-2.103-.338-3.815-2.058-3.799-2.578-7.089-1.423-9.026 1.354-2.275 5.426-2.264 6.767-.034 1.15 1.911.639 5.219-1.403 9.076-.91 1.719-.671 3.023-.31 3.814.99 2.167 3.707 2.794 6.584 3.458 1.879.436 1.76.882 1.76 3.986h1.995l.005-1.241c0-2.52-.199-3.975-3.178-4.663z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-youtube-9">
+          <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z"></path>
+        </symbol>
+      </svg>
+</body>
+</html>

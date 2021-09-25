@@ -1,0 +1,47 @@
+$grid-breakpoint-s-max: 688px;
+$grid-breakpoint-m-min: 689px;
+$grid-breakpoint-m-max: 992px;
+$grid-breakpoint-l-min: 993px;
+$grid: (
+    'phone':(
+        'max': $grid-breakpoint-s-max
+    ),
+    'tablet':(
+        'min': $grid-breakpoint-m-min,
+        'max': $grid-breakpoint-m-max
+    ),
+    'desktop':(
+        'min': $grid-breakpoint-l-min
+    )
+);
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+  }
+  
+  .col-12 {
+    grid-column: span 12;
+  }
+  .col-9 {
+    grid-column: span 9;
+  }
+  .col-8 {
+    grid-column: span 8;
+  }
+  .col-6 {
+    grid-column: span 6;
+  }
+  .col-5 {
+    grid-column: span 5;
+  }
+  .col-4 {
+    grid-column: span 4;
+  }
+  .col-3 {
+    grid-column: span 3;
+  }
+  .col-2 {
+    grid-column: span 2;
+  }

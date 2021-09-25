@@ -1,0 +1,12 @@
+.white-section{
+    height: 100vh;
+    background-color: $white-color;
+    margin-top: 200px;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100% );
+    padding-top: 150px;
+
+    @include mq-down('phone'){
+       height: 160vh;
+       margin-top: 80px;
+    }
+}

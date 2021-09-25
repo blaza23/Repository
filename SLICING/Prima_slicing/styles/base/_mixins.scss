@@ -1,0 +1,51 @@
+// media query up 
+@mixin mq-up($name) {
+    $min: map-get($grid, $name, 'min');
+    @media (min-width: $min) {
+        @content;
+    }
+}
+// media query down - MOBITEL
+@mixin mq-down($name) {
+    $max: map-get($grid, $name, 'max');
+    @media (max-width: $max) {
+        @content;
+    }
+}
+
+//za velike ikone
+@mixin big-icon{
+    width: 1.25em;
+    height: 1.25em;
+
+    @content;
+}
+
+//za buttone
+@mixin black-button{
+    padding: 10px 30px;
+    font-size: .9rem;
+    font-weight: bold;
+    color: $white-color;
+    text-transform: uppercase;
+    background-color: $black-color;
+    border: 1px solid $black-color;
+    border-radius: 30px;
+    cursor: pointer;
+
+    @content;
+}
+
+@mixin white-button{
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: .9rem;
+    font-weight: bold;
+    color: darken(rgb(216, 216, 216),20);
+    background-color: rgb(216, 216, 216);
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 30px;
+    cursor: pointer;
+
+    @content;
+}

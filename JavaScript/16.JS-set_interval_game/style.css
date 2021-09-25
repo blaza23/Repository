@@ -1,0 +1,32 @@
+.container{
+    background-color: lightblue;
+    width: 1300px;
+    height: 1300px;
+}
+.playground{
+    background-color: lightskyblue ;
+    width: 800px;
+    height: 800px;
+    margin-top: 20px;
+    position: relative;
+}
+.start{
+    /* display: block;
+    margin: auto; */
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: rgba(29, 58, 174, 0.523);
+    font-size: 1.5rem;
+    color: whitesmoke;
+    border-color: rgba(29, 58, 174, 0.523);
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: rgb(64, 64, 206);
+    border: 1px solid rgb(64, 64, 206);
+    border-radius: 100%; 
+}

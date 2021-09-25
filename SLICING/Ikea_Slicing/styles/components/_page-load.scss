@@ -1,0 +1,22 @@
+.page-load{
+    text-align: center;
+    padding-top:  2rem;
+    padding-bottom: 8rem;
+
+    &__number{
+        color: map-get($gray-color, 'main-gray');
+        font-size: .8rem;
+        font-weight: bold;
+        padding-bottom: 4rem;
+    }
+
+    &__button{
+        border: 1px solid $border-color;
+        border-radius: 30px;
+        background: none;
+        padding:10px 20px;
+        font-weight: bold;
+
+    }
+    
+}

@@ -1,0 +1,304 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*:after {
+  font-family: inherit;
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.hero {
+  background-image: url("/assets/background-1.jpg");
+  background-repeat: no-repeat;
+  background-color: #023d39;
+  background-size: cover;
+  min-height: 650px;
+}
+.hero-container {
+  padding-top: 200px;
+  padding-left: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  gap: 15px;
+  color: white;
+}
+.hero-logo {
+  width: 200px;
+  height: auto;
+}
+.hero-content {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.hero-button {
+  display: flex;
+  gap: 2rem;
+}
+.hero-button button {
+  border: 1px solid white;
+  padding: 0.5em 1em;
+  background: none;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+}
+.hero-button button a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+section {
+  background-image: url("/assets/background-2-4.jpg");
+  background-repeat: no-repeat;
+  background-color: #023d39;
+  background-size: cover;
+  min-height: 860px;
+}
+section .news-articles__title {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+}
+section .news-articles__container {
+  padding: 0 12rem;
+  display: flex;
+  gap: 1rem;
+}
+section .news-articles__little {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  padding-bottom: 120px;
+  border-bottom: 0.5rem solid red;
+}
+section .news-articles__little__section {
+  display: block;
+  position: relative;
+  font-size: 1.3rem;
+}
+section .news-articles__little__section h3 {
+  color: red;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+}
+section .news-articles__little__section time {
+  position: absolute;
+  right: 2.3em;
+  top: 0.8em;
+}
+section .news-articles__little img {
+  width: 100%;
+  height: auto;
+}
+section .news-articles__little__para1 {
+  font-size: 1.5rem;
+  font-weight: italic;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  text-transform: capitalize;
+  line-height: 2rem;
+}
+section .news-articles__little__para2 {
+  font-size: 1.3rem;
+  padding-left: 1.5rem;
+  line-height: 2rem;
+}
+
+.seer-article {
+  background-image: url("/assets/background-3.jpg");
+  background-repeat: no-repeat;
+  background-color: #023d39;
+  background-size: cover;
+  min-height: 650px;
+}
+.seer-article__container {
+  width: 20%;
+  color: white;
+  padding-top: 200px;
+}
+.seer-article__title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.seer-article__content {
+  line-height: 1.25;
+  margin-bottom: 1.3rem;
+}
+.seer-article__button {
+  background: none;
+  border: 1px solid white;
+  border-radius: 1px;
+  padding: 0.5rem;
+}
+.seer-article__button a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+}
+
+.legends-article {
+  background-image: url("/assets/background-2-4.jpg");
+  background-repeat: no-repeat;
+  background-color: #023b38;
+  background-size: cover;
+  min-height: 650px;
+}
+.legends-article__container {
+  padding-top: 50px;
+  display: flex;
+  gap: 50px;
+}
+.legends-article__container img {
+  width: 40%;
+}
+.legends-article__title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.legends-article__content {
+  width: 40%;
+  line-height: 1.25;
+  margin-bottom: 1.3rem;
+}
+.legends-article__button {
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 2px;
+}
+.legends-article__button a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0.5rem;
+}
+
+.play {
+  background-image: url("/assets/background-5.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  min-height: 350px;
+}
+.play__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.play__title {
+  padding: 50px 0;
+}
+.play__summary {
+  padding-bottom: 50px;
+}
+.play__star {
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.6rem;
+  margin-top: 60px;
+}
+.play__link {
+  background: none;
+  border: 1px solid white;
+  border-radius: 1px;
+  padding: 0.5rem;
+}
+.play__link a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+}
+
+/*# sourceMappingURL=main.css.map */

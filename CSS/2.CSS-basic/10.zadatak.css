@@ -1,0 +1,29 @@
+button.gumb{
+    color:var(--crna);
+    border-color:var(--crna);;
+    background-color: var(--bijela);
+}
+
+button.gumb2{
+    color:var(--plava);
+    border-color:var(--plava);
+    background-color:var(--bijela);
+}
+button.gumb:hover{
+    color:var(--bijela);
+    background-color: var(--crna);;
+}
+
+button.gumb2:hover{
+        color:var(--bijela);
+        background-color: var(--plava);
+    
+    
+}
+
+body{
+    --crna:black;
+    --bijela:white;
+    --plava:blue;
+
+}

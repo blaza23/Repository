@@ -1,0 +1,48 @@
+// media query up
+@mixin mq-up($name) {
+    $min: map-get($grid, $name, 'min');
+    @media (min-width: $min) {
+        @content;
+    }
+}
+// media query down - mobitel?
+@mixin mq-down($name) {
+    $max: map-get($grid, $name, 'max');
+    @media (max-width: $max) {
+        @content;
+    }
+}
+
+//button 
+@mixin blueButton{
+    .continue-payment-wrapper{
+        padding: 2rem 0;
+    }
+
+    .continue-payment{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 2rem;
+        border: 1px solid $blue-color;
+        border-radius: 3px;
+        background-color: $blue-color;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+
+        .icon {
+            width: 2.5em; 
+            height: 2.5em;
+            padding: 0.5em;
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 100%;
+            
+        }
+    }
+
+    
+
+    @content;
+}

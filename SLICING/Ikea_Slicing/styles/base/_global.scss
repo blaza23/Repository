@@ -1,0 +1,88 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+*,
+*::before,
+*:after {
+    font-family: inherit;
+    box-sizing: inherit;
+}
+
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+.container{
+    max-width:1312px;
+    margin: auto;
+
+    @include mq-down('tablet'){
+        max-width: 900px;
+        margin: auto;
+    }
+
+    @include mq-down('phone'){
+        max-width: 450px;
+        margin: auto;
+    }
+}
+.mini-container{
+    max-width: 850px;
+    margin:left ;
+}
+
+footer{
+    background-color: $footer-bg;
+}
+
+.discount{
+    border: 1px solid $discount-color;
+    box-shadow: 2px 2px $discount-border-color;
+    background-color: $discount-color;
+    width: 80px;
+    padding-bottom: .3rem;
+    padding-left: .3rem;
+}
+
+.is-active{
+    transform: translate(100%);
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+.hidden{
+    display: none;
+}
+
+.closeHamburger{
+    transform: translate(-100%);
+    
+}
+
+//za slider
+::-webkit-scrollbar {
+    display: none;
+}

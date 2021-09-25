@@ -1,0 +1,17 @@
+.box{
+    background-color: black;
+    height: 90px;
+    width: 90px;
+    
+}
+.buttonContainer{
+   position: absolute;
+   right: 55em;
+   top:5em;
+
+
+}
+
+.border{
+    border: 4px solid green;
+}

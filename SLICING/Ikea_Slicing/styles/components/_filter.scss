@@ -1,0 +1,100 @@
+.section{
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 1.5rem;
+
+    &__title{
+        padding-top: 4rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    &-list{
+        padding-top: 4rem;
+        display: flex;
+        justify-content: space-between;
+
+        @include mq-down('tablet'){
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include mq-down('phone'){
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-left{
+            display: flex;
+            gap: 10px;
+
+            @include mq-down('tablet'){
+                justify-content: space-between;
+            }
+
+            @include mq-down('phone'){
+                overflow-x: scroll;
+            }
+            
+            &__item{
+                
+                a{
+                    display: block;
+                    text-decoration: none;
+                    color: $primary-text-color;
+                    font-weight: bold;
+                    font-size: .8rem;
+                    border: 1px solid $border-color;
+                    border-radius: 40px;
+                    background-color: $border-color;
+                    padding: 1rem ;
+
+                    .icon { 
+                        width: 0.8125em; 
+                        height: 0.8125em;
+                        margin:0 .5em;
+                        
+                      }
+                    
+                }
+            }
+        }
+
+        &-right{
+            display: flex;
+            gap: 10px;
+            padding-top: 1rem;
+
+            @include mq-down('tablet'){
+                justify-content: space-between;
+            }
+
+            @include mq-down('phone'){
+                justify-content: space-between;
+            }
+
+            &__item{
+               font-weight: bold; 
+               font-size: .8rem;
+               color: $border-color;
+
+              &:nth-child(2){
+               
+                  a{
+                      color: $primary-text-color;
+                      text-decoration: none;
+                      border-bottom: 1.5px solid $primary-text-color;
+                  }
+              }
+
+              &:last-child{
+                  a{
+                      color: lighten(map-get($gray-color, 'breadcrump-first-gray'),10) ;
+                      text-decoration: none;
+                  }
+              }
+
+            }
+
+        }
+    }
+}

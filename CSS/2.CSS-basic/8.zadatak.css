@@ -1,0 +1,24 @@
+button.gumb{
+    color:black;
+    border-color:black;
+    background-color: white;
+}
+
+button.gumb2{
+    color:blue;
+    border-color:blue;
+    background-color: white;
+}
+button.gumb:hover{
+    color:white;
+    background-color: black;
+}
+
+button.gumb2:hover{
+        color:white;
+        background-color: blue;
+    
+    
+}
+
+

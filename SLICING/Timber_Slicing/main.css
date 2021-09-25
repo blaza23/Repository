@@ -1,0 +1,276 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*:after {
+  font-family: inherit;
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.container {
+  max-width: 1212px;
+  margin: auto;
+  padding: 0 50px;
+}
+
+body {
+  background-image: url("/assets/woodenBackground.jpeg");
+  background-repeat: repeat;
+  background-position-x: center;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.header .logo {
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.header .logo::first-letter {
+  color: #20cbff;
+}
+
+.main-title-wrapper {
+  padding-top: 100px;
+}
+.main-title-wrapper .main-title {
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: bold;
+  border-bottom: 2px solid #20cbff;
+  color: #ffffff;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 20px;
+}
+.navigation-list__item {
+  position: relative;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.navigation-list__item a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+.navigation-list__item a:hover {
+  color: #20cbff;
+}
+.navigation-list__item + .navigation-list__item::before {
+  content: "";
+  background: #ffffff;
+  width: 2px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+}
+
+.white-section {
+  height: 100vh;
+  background-color: #ffffff;
+  margin-top: 200px;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  padding-top: 150px;
+}
+@media (max-width: 688px) {
+  .white-section {
+    height: 160vh;
+    margin-top: 80px;
+  }
+}
+
+.statictic-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+@media (max-width: 688px) {
+  .statictic-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+.statictic-wrapper .statistic {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.statictic-wrapper .statistic-number {
+  display: inline-block;
+  padding-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.statictic-wrapper .statistic-title {
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.statictic-wrapper .statistic-content {
+  line-height: 1.4rem;
+}
+
+.promotion {
+  text-align: center;
+}
+.promotion-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.promotion-content {
+  font-weight: bold;
+}
+.promotion-image {
+  width: 500px;
+  height: auto;
+  padding-top: 30px;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 0;
+  text-align: center;
+}
+@media (max-width: 688px) {
+  .description {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+.description .icon-wrapper {
+  display: inline-block;
+  border: 2px solid #ffffff;
+  border-radius: 100%;
+  padding: 15px;
+}
+.description .icon-wrapper .icon {
+  fill: #ffffff;
+  width: 25px;
+  height: 25px;
+}
+.description-title {
+  color: #ffffff;
+  padding: 20px 0;
+}
+.description-content {
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+/*# sourceMappingURL=main.css.map */

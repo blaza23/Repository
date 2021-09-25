@@ -1,0 +1,20 @@
+/*tekst zadatka: 2.Rotate the shape in such a way that it resembles a diamond.*/
+
+.container {
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    background-color: aliceblue;
+  }
+  
+  .shape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10rem;
+    height: 10rem;
+    background-color: darkred;
+    transform: translate(-50%,-50%)
+                rotate(45deg);
+    
+  }

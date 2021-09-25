@@ -1,0 +1,69 @@
+body{
+    background-color: lightblue;
+    width: 600px;
+    margin:auto;
+}
+
+ul, ol{
+    margin: 20px;
+}
+
+ul{
+    list-style-type:circle;
+    color: peru;
+    text-shadow: 1px 1px black;
+}
+
+ol{
+    list-style-type:Upper-roman;
+    color:royalblue;
+    text-shadow: 1px 1px black;
+
+}
+
+div{
+    text-transform: capitalize;
+}
+
+li{
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    padding: 8px 10px;
+    
+}
+
+ol li {
+    color:blue;
+    text-transform: uppercase;
+    font-family: Verdana;
+}
+ a {
+     color:cadetblue;
+     text-decoration:none
+ }
+
+ a:visited{
+     color:cornflowerblue;
+     text-decoration: none;
+ }
+a:hover,
+a:focus {
+    color:darkblue;
+    text-decoration: none;
+
+}
+
+p::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+blockquote::before,
+blockquote::after{
+
+content:"'";
+font-size:x-large;
+font-weight: bolder;
+color:darkred;
+
+}

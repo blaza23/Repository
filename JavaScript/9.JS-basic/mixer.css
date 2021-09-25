@@ -1,0 +1,61 @@
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerL {
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+  }
+  .containerR {
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+  }
+  .inputForm,
+  input {
+    margin-bottom: 1em;
+  }
+  .colorButtons > div {
+    display: flex;
+  }
+  .colorButtons > div > button {
+    padding: 0 3em 0 3em;
+    margin: 0.7em;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  .colorDiv {
+    width: 15em;
+    height: 11em;
+    border: 1px solid black;
+    margin: 1em 0 1em 0;
+  }
+  .randomizeDiv {
+    width: 600px;
+    display: flex;
+    align-items: center;
+  }
+  .randomizeDiv > button {
+    padding: 1em;
+    background-color: transparent;
+    border: 1px solid black;
+  }
+  span {
+    font-size: 14px;
+    margin-left: 2em;
+  }
+  input {
+    border: 1px solid black;
+  }
+  
+  
+  
+  
+  
+  
+  

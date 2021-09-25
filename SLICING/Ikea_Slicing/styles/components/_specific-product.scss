@@ -1,0 +1,356 @@
+.specific-product-wrapper{
+         padding-top: 3rem;
+         display: flex;
+         gap: 30px;
+
+         @include mq-down('phone'){
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        @include mq-down('tablet'){
+            display: flex;
+            flex-direction: column-reverse;
+        }
+         
+    &__left{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(auto, 410px);
+        grid-column-gap: 30px ;
+
+        @include mq-down('phone'){
+            display: flex;
+            flex-direction: column;
+        }
+       
+        img{
+            width:400px;
+            height: auto;
+
+            @include mq-down('phone'){
+                width: 100%;
+            }
+        }
+    }
+     .sticky{
+         position: sticky;
+         top: 0;
+     }
+    &__right{
+        position: relative;
+
+        .specific-product{
+
+            &__new,
+            &__title,
+            &__description{
+                padding-bottom: .6rem;
+            }
+
+            &__description{
+                width:78%;
+            }
+
+            &__price{
+                position: absolute;
+                top:0.5rem;
+                right:2rem;
+            }
+
+            &__stars{
+                display: flex;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid $border-color;
+
+                span{
+                    margin-left: 1rem;
+                    padding-top: .2rem;
+                }
+
+                .icon { 
+                    width: 0.9375em; 
+                    height: 0.9375em;
+                    margin: .1em;
+                  } 
+            }
+
+            &__color-button{
+                padding-top: 1rem;
+                border:none;
+                background: none;
+                position: relative;
+                display: block;
+                width: 100%;
+                text-align: left;
+                cursor: pointer;
+                
+                p:first-child {
+                    font-weight: bold;
+                    padding-bottom: .4rem;
+                }
+               
+                .icon { 
+                    width: 0.625em; 
+                    height: 0.625em;
+                    margin: .1em;
+
+                    position: absolute;
+                    right: 0;
+                    top:1.5rem;
+                  } 
+            }
+
+            &__small-image {
+                padding-top: 2rem;
+                display: flex;
+                img {
+                    width: 70px;
+                    height: auto;
+                    &:last-child {
+                        border: 2px solid $primary-text-color;
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            &__button-wrapper {
+                padding-top: 1.5rem;
+                display: flex;
+                gap:20px;
+
+                .basket {
+                    border: 1px solid $blue-color;
+                    background: $blue-color;
+                    border-radius: 30px;
+                    padding: 15px;
+                    width: 70%;
+                    color: $secondary-text-color;
+                    font-weight: bold;
+                    cursor: pointer;
+                    
+                    @include mq-down('tablet'){
+                        width: 100%;
+                    }
+                }
+
+                .heart-svg{
+                    background: none;
+                    border:1px solid $border-color;
+                    border-radius: 40px;
+                    padding:8px;
+                    cursor: pointer;
+                  
+                    .icon { 
+                        width: 1.25em; 
+                        height: 1.25em;
+                        margin: .5em;
+                        padding-top: .1rem;
+                    }
+                }
+            }
+
+            &__delivery{
+                    display: flex;
+                    padding-top: 2rem;
+                    padding-bottom: 1rem;
+                    gap:5px;
+
+
+                &:last-child{
+                            padding-top: 1rem;
+                            border-top: 1px solid $border-color;
+
+                            a{
+                                color:map-get($gray-color, "main-gray")
+                            }
+                        }
+
+                .icon{
+                    width: 1.25em; 
+                    height: 1.25em;
+                    margin: 0 .5em;
+                    fill: map-get($gray-color, 'main-gray' );
+                    }
+
+                .is-active{
+                    color: $benefit-bar-bg;
+                }
+            }
+        }
+    }  
+}
+
+//OPIS PROIZVODA
+.specific-product{
+    padding-bottom: 4rem;
+
+    &__content{
+    padding-top: 5rem;
+    width:58%;
+    line-height: 1.5rem;
+  
+    @include mq-down('phone'){
+        width: 100%;
+    }
+    }
+
+    &__number-article{
+        font-size: 0.8rem;
+        padding: 1rem 0;
+        
+    }
+
+    .number-of-articles{
+        font-size: 0.8rem;
+        font-weight: bold;
+        border: 1px solid $primary-text-color;
+        background: $primary-text-color;
+        color: $secondary-text-color;
+        padding: 3px 15px;
+    }
+}
+// PODATCI O PROIZVODU
+.info-product{
+    position: relative;
+
+    &-button{
+        display: block;
+        background: none;
+        border: none;
+        border-top: 1px solid $border-color;
+        width: 100%;
+        padding: 2rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        
+        .icon{
+            width: 0.625em; 
+            height: 0.625em;
+            margin: 0 .5em;
+        }
+    }
+
+    &-stars{
+        position: absolute;
+        left: 2rem;
+        bottom: 1rem;
+
+        .icon{
+            width: 0.625em; 
+            height: 0.625em;
+            margin: 0 .5em;
+    
+            &-star{
+                width: 0.625em; 
+                height: 0.625em;
+            }
+        }
+
+        span{
+            margin-left: .5rem;
+        }
+    }
+}
+
+
+//SLIČNI PROIZVODI
+//OSTALI SU TAKOĐER GLEDALI
+
+.similar-products {
+
+    &-wrapper{
+        display: flex;
+        
+
+        .mini-article__wrapper{
+            position: relative;
+            
+            .icon-heart{
+                width: 1.25em; 
+                height: 1.25em;
+                position: absolute;
+                top: 0;
+                left: 250px;
+                fill: map-get($gray-color, 'main-gray');
+
+                @include mq-down('phone'){
+                    left: 150px;
+                }
+            }
+            .button-basket{
+                border: 1px solid $blue-color;
+                background-color: $blue-color;
+                border-radius: 100%;
+                padding: .5rem;
+                cursor: pointer;
+                position: absolute;
+                bottom: 80px;
+                left: 230px;
+
+                @include mq-down('phone'){
+                    left: 140px;
+                }
+    
+                .icon-basket{
+                    width: 1.5625em; 
+                    height: 1.5625em;
+                    fill: $secondary-text-color;
+                }
+
+               
+            }
+        }
+
+        
+        @include mq-down('tablet'){
+               width: 100%;
+               overflow-x: scroll;    
+        }
+
+        @include mq-down('phone'){
+            width: 100%;
+            overflow-x: scroll;
+        }
+    }
+
+    &__title{
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding:2rem 0;
+  
+    }
+
+    &__image{
+        padding-bottom: 2rem;
+    }
+
+    &__stars {
+        display: flex;
+        padding-top:1rem;
+        
+    
+        span {
+            margin-left: 1rem;
+            padding-top: .2rem;
+        }
+    
+        .icon {
+            width: 0.9375em; 
+            height: 0.9375em;
+            margin: .1em;
+        }
+    }
+}
+
+//NEDAVNO SI PREGLEDAVAO/LA OVE PROIZVODE
+
+.last-seen__image{
+    height: auto;
+    width: 150px;
+    padding-bottom: 2rem;
+}
+

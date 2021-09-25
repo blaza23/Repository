@@ -1,0 +1,39 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    width: 20em;
+  }
+  
+  .loader__dot {
+    width: 2em;
+    height: 2em;
+    background-color: #00897b;
+    border-radius: 50%;
+    animation: hop 1s linear infinite;
+  }
+  
+  .loader__dot:not(:last-child) {
+    margin-right: 0.75em;
+  }
+
+  @keyframes hop {
+    0% {
+        transform: translateY(0);
+        background-color: #2b9aee;
+    }
+    50% {
+        transform: translateY(50%);
+        background-color: #820089;
+    }
+    100%{
+        transform: translateY(0);
+        background-color: #35f5e28a;
+    }
+}
+
+.loader__dot:nth-child(2) {
+  animation-delay: 250ms;
+}
+.loader__dot:last-child {
+  animation-delay: 500ms;
+}

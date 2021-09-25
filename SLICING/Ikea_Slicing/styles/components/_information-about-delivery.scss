@@ -1,0 +1,48 @@
+.information-about-delivery{
+    padding-bottom: 2rem;
+    
+    &__title{
+        display: flex;
+        gap:60px;
+        font-weight: bold;
+        padding-bottom: 1.5rem;
+
+        span{
+            border: 1px solid $primary-text-color;
+            border-radius: 100%;
+            background: none;
+            color: $primary-text-color;
+            padding: .2rem .4rem;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    }
+
+    &__second-title{
+        padding-left: 5.3rem;
+        padding-bottom: 0.5rem;
+        font-weight: bold;
+        font-size: .9rem;
+        
+    
+    }
+
+    &__content{
+        padding-left: 5.3rem;
+        padding-bottom:1.5rem ;
+        color: map-get($gray-color, 'main-color');
+        font-size: .9rem;
+        
+    }
+
+    &__edit-button{
+        border: none;
+        background: none;
+        text-decoration: underline;
+        color: map-get($gray-color, 'main-gray');
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+    }
+}

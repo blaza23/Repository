@@ -1,0 +1,147 @@
+/*1.zadatak*/
+/*2.zadatak*/
+/*3zadatak*/
+.listClass-light {
+  background-color: white;
+  color: black;
+  font-weight: light;
+}
+
+.listClass-normal {
+  background-color: white;
+  color: black;
+  font-weight: normal;
+}
+
+.listClass-bold {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+/*4.zadatak*/
+.thecolor-red {
+  background-color: #e53935;
+}
+
+.thecolor-green {
+  background-color: #43a047;
+}
+
+.thecolor-blue {
+  background-color: #1e88e5;
+}
+
+/*5.zadatak*/
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/*drugi nacin 5. zadatak bez liste*/
+.heading-1 {
+  font-size: 6rem;
+}
+
+.heading-2 {
+  font-size: 5rem;
+}
+
+.heading-3 {
+  font-size: 4rem;
+}
+
+.heading-4 {
+  font-size: 3rem;
+}
+
+.heading-5 {
+  font-size: 2rem;
+}
+
+.heading-6 {
+  font-size: 1rem;
+}
+
+/*6.zadatak*/
+.position-1 {
+  position: absolute;
+  top: 10%;
+}
+
+.position-2 {
+  position: absolute;
+  top: 20%;
+}
+
+.position-3 {
+  position: absolute;
+  top: 30%;
+}
+
+.position-4 {
+  position: absolute;
+  top: 40%;
+}
+
+.position-5 {
+  position: absolute;
+  top: 50%;
+}
+
+/*7.zadatak*/
+/*8.zadatak*/
+/*9.zadatak*/
+.button-primary {
+  background-color: dodgerblue;
+  color: white;
+}
+.button-primary:hover {
+  background-color: #389dff;
+}
+.button-primary:active {
+  background-color: #0583ff;
+}
+
+.button-secondary {
+  background-color: green;
+  color: white;
+}
+.button-secondary:hover {
+  background-color: #009a00;
+}
+.button-secondary:active {
+  background-color: #006700;
+}
+
+.button-danger {
+  background-color: tomato;
+  color: white;
+}
+.button-danger:hover {
+  background-color: #ff7961;
+}
+.button-danger:active {
+  background-color: #ff4d2e;
+}
+
+/*# sourceMappingURL=style.css.map */
